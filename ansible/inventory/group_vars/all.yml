@@ -52,7 +52,7 @@ insecure_registrys:
 # Kubernetes services will get fake IP addresses from this range.
 # This range must not conflict with anything in your infrastructure. These
 # addresses do not need to be routable and must just be an unused block of space.
-kube_service_addresses: 10.254.0.0/16
+kube_service_addresses: 10.224.166.64/26
 
 # Network implementation (flannel|opencontrail|contiv)
 networking: flannel
@@ -88,16 +88,16 @@ flannel_host_prefix: 24
 #contiv_default_gw: 172.16.0.1
 
 # Set to false to disable logging with elasticsearch
-cluster_logging: true
+cluster_logging: false
 
 # Turn to false to disable cluster monitoring with heapster and influxdb
-cluster_monitoring: true
+cluster_monitoring: false
 
 # Turn to false to disable the kube-ui addon for this cluster
-kube_ui: false
+kube_ui: true
 
 # Turn to false to disable the kube-dash addon for this cluster
-kube_dash: false
+kube_dash: true
 
 # Turn to false to disable the node_problem_detector addon for this cluster
 node_problem_detector: false

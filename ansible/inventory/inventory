@@ -1,0 +1,11 @@
+[masters]
+#10.183.0.113
+10.224.166.113
+
+[etcd:children]
+masters
+
+[nodes]
+#kube-minion-test-[1:2].example.com
+#10.183.0.80
+10.224.166.80
